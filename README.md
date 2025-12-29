@@ -1,7 +1,7 @@
 # Deceit Cosmetic Server
 Deceit Cosmetic Server is a Party Server for Deceit written in C# for the purpose of viewing cosmetics. The server only works for one user and will never support multiple users.
 
-Last tested version: ``202108111151`` (v2021.6.2b)
+Last tested version: ``202302281423`` (v2022.3.3a)
 
 ## Notes
 - _You cannot use the cosmetics in the live version of the game_
@@ -30,7 +30,8 @@ To compile the DeceitCosmeticServer project, you need:
 - [.NET 5.0 SDK](https://dotnet.microsoft.com/download)
 
 ## Links
-- [Baseline Webiste](https://baseline.gg/)
-- [Deceit Website](https://playdeceit.com/)
+- [Worldmakers Webiste](https://www.worldmakers.com/) (prev. Baseline)
+- [Deceit Website](https://deceit.gg/)
 - [Deceit Discord](https://discord.gg/deceit)
-- [GitHub](https://github.com/Kasuromi/DeceitCosmeticServer)
+- [Original GitHub](https://github.com/Kasuromi/DeceitCosmeticServer)
+- [GitHub fork](https://github.com/hxpeIess/DeceitCosmeticServer)
