@@ -7,7 +7,7 @@ namespace DeceitCosmeticServer.Net.Messages {
         public Guid PartyGuid;
         public SUserProfile UserProfile;
         public override long CalculateSize() =>
-            base.CalculateSize() + 16 + 2 + UserProfile.CalculateSize();
+            base.CalculateSize() + 16 + 2 + 1 + UserProfile.CalculateSize();
         public override byte[] Serialize() {
             base.Serialize();
             _writer.WriteBytes(PartyGuid.ToByteArray());
