@@ -12,6 +12,7 @@ namespace DeceitCosmeticServer.Net.Messages {
             base.Serialize();
             _writer.WriteBytes(PartyGuid.ToByteArray());
             _writer.WriteShort(1);
+            _writer.WriteByte(1);
             _writer.WriteSerializable(UserProfile);
             return _writer.GetData();
         }
