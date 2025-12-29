@@ -9,7 +9,7 @@ Last tested version: ``202302281423`` (v2022.3.3a)
 - _I offer no support for this project. Do **not** ask for support in the official Deceit Discord_
 
 ## Usage
- - Download the latest [release](https://github.com/Kasuromi/DeceitCosmeticServer/releases) or compile the project. Check out [Compiling](#compiling) for required resources.
+ - Download the latest [release](https://github.com/hxpeIess/DeceitCosmeticServer/releases) or compile the project. Check out [Compiling](#compiling) for required resources.
  - Locate your Deceit installation directory.
 It's usually located in `C:\Program Files (x86)\Steam\steamapps\common\Deceit\`
  - Open the `Assets` folder and open `Scripts.pak` with any ZIP reader. (7-Zip, WinRar, etc.)
