@@ -1,4 +1,4 @@
-﻿using DeceitCosmeticServer.Net.Objects;
+using DeceitCosmeticServer.Net.Objects;
 using System;
 
 namespace DeceitCosmeticServer.Net.Messages {
@@ -8,13 +8,14 @@ namespace DeceitCosmeticServer.Net.Messages {
 
         public override long CalculateSize() =>
             base.CalculateSize() +
-            1 + 8 + UserProfile.CalculateSize() +
+            1 + 8 + 1 + UserProfile.CalculateSize() +
             10 + 1 + 16 + 2 + 8;
 
         public override byte[] Serialize() {
             base.Serialize();
             _writer.WriteBool(false);
             _writer.WriteBytes(new byte[8]);
+            _writer.WriteByte(1);
             _writer.WriteSerializable(UserProfile);
             _writer.WriteBytes(new byte[10]);
             _writer.WriteByte(1);
