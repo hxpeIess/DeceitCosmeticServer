@@ -21,7 +21,7 @@ namespace DeceitCosmeticServer {
             SNetworkReader reader = new(e.RawData);
             switch (messageId) {
                 case MessageId.SEnterQueue:
-                    SendMessage("You cannot queue on the Deceit Cosmetic Server.\nThe server's purpose is to allow users to view cosmetics, but not play with them.\n\n - With <3 from Kasuromi");
+                    SendMessage("You cannot queue on the Deceit Cosmetic Server.\nThe server's purpose is to allow users to view cosmetics, but not play with them.\n\n - With <3 from Kasuromi && me");
                     break;
                 case MessageId.SUpdateEmblem:
                     if (_profile == null) return;
@@ -41,7 +41,6 @@ namespace DeceitCosmeticServer {
                         EmblemId = 0,
                         Unlocks = Program.UNLOCKS,
                         ServerParams = new List<SUserProfileParam> {
-                            SUserProfileParam.New<int>("level", 0),
                             SUserProfileParam.New<int>("reputation", -1),
                         }
                     };
@@ -63,7 +62,7 @@ namespace DeceitCosmeticServer {
                         IsCurrentUser = true
                     }.Serialize());
                     Send(new SExitQueueResult { Succeeded = true }.Serialize());
-                    SendMessage("Welcome to the Deceit Cosmetic Server.\nCosmetic choices aren't saved and will not carry over to the live servers.\n\n - With <3 from Kasuromi");
+                    SendMessage("Welcome to the Deceit Cosmetic Server.\nCosmetic choices aren't saved and will not carry over to the live servers.\n\n - With <3 from Kasuromi && me");
                     break;
                 case MessageId.SSyncOnlineProfileAttributes:
                     if (_profile == null) return;
