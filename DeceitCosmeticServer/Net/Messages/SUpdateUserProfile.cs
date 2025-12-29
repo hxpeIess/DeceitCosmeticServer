@@ -12,7 +12,11 @@ namespace DeceitCosmeticServer.Net.Messages {
 
         public override byte[] Serialize() {
             base.Serialize();
+            _writer.WriteByte(2);
             _writer.WriteSerializable(UserProfile);
+            _writer.WriteByte(0);
+            _writer.WriteByte(0);
+            _writer.WriteByte(0);
             _writer.WriteBool(IsCurrentUser);
             return _writer.GetData();
         }
