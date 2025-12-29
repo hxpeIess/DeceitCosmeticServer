@@ -7,8 +7,8 @@ namespace DeceitCosmeticServer.Net.Messages {
         public bool IsCurrentUser;
 
         public override long CalculateSize() =>
-            base.CalculateSize() +
-            UserProfile.CalculateSize() + 1;
+            base.CalculateSize() + 1 +
+            UserProfile.CalculateSize() + 3 + 1;
 
         public override byte[] Serialize() {
             base.Serialize();
