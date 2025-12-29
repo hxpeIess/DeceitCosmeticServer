@@ -9,7 +9,7 @@
         SUpdateEmblem = 60,
         SAuthenticateOAuthClient = 62,
         SSyncOnlineProfileAttributes = 68,
-        SLookupUserProfile = 90,
+        SLookupUserProfile = 91,
         SLookupUserProfileResult,
         SAuthenticateClientResult = 111
     }
